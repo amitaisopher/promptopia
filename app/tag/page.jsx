@@ -1,7 +1,7 @@
 'use client'
 
 import {useState, useRef} from 'react'
-import PromptCard from './PromptCard';
+import PromptCard from '@/components/PromptCard';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
