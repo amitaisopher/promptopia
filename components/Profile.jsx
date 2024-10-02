@@ -12,7 +12,7 @@ const Profile = ({name, data, desc, handleEdit, handleDelete, handleProfileClick
           <PromptCard
             key={post._id}
             post={post}
-            handleEhandleProfileClickdit={() => handleEdit && handleEdit(post)}
+            handleEdit={() => handleEdit && handleEdit(post)}
             handleDelete={() => handleDelete && handleDelete(post)}
             handleProfileClick={handleProfileClick}/>
         ))}
