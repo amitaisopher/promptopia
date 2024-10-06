@@ -4,9 +4,11 @@ import {useState, useRef} from 'react'
 import PromptCard from '@/components/PromptCard';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { unstable_noStore as noStore } from 'next/cache';
 
 
 const PromptCardList = ({data, handleTagClick, handleProfileClick}) => {
+  noStore()
   return (
     <div className="mt-16 prompt_layout">
       {data.map((post) => (
