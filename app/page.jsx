@@ -1,6 +1,8 @@
 import Feed from '@components/Feed';
+import { unstable_noStore as noStore } from 'next/cache';
 
 const Home = () => {
+  noStore();
   return (
     <section className="w-full flex-center flex-col">
         <h1 className="head_text text-center">Discover & Share
