@@ -14,7 +14,7 @@ const MyProfile = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch(`/api/users/${id}/posts`)
+            const response = await fetch(`/api/users/${id}/posts` , { cache: 'no-store' })
             const data = await response.json()
             setMyPosts(data)
         }

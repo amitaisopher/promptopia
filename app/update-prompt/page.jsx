@@ -21,7 +21,7 @@ const UpdatePromptContent = () => {
       }
 
       try {
-        const response = await fetch(`/api/prompt/${promptId}`);
+        const response = await fetch(`/api/prompt/${promptId}`, {cache: 'no-store'});
         if (!response.ok) {
           throw new Error("Failed to fetch prompt details");
         }
